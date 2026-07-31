@@ -1,7 +1,0 @@
-services:
-  - type: web
-    name: prometheus-ai-tutor
-    env: python
-    plan: free
-    buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn app:app --workers 2 --threads 4 --timeout 120
